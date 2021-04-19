@@ -7,7 +7,7 @@ const API=process.env.NODE_ENV === 'production' ? `https://movie211213.herokuapp
 export default async function getAllMovies() {
 
     try{
-        return await fetch(`${API}/movies/all`)
+        return await fetch(`${API}movies/all`)
         .then((res)=>{return res.json()})
         .then(results=>{return results.data})
     }catch(err){
